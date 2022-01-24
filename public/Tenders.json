@@ -7,7 +7,7 @@
     "CurrencyId": "₪",
     "Time": 22946,
     "TotalToLead": 77500,
-    "RankInfo": null,
+    "RankInfo": "Active",
     "UserLastPropositionTotal": 80000
   },
   {
@@ -41,7 +41,7 @@
     "CurrencyId": "₪",
     "Time": 22946,
     "TotalToLead": 77500,
-    "RankInfo": null,
+    "RankInfo":  "Active",
     "UserLastPropositionTotal": 80000
   },{
     "Id": 15,

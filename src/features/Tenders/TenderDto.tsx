@@ -1,5 +1,5 @@
 
-export type Ranks= ("A"|"B"|"C")
+export type Ranks= ("Active"|"Ended"|"Frozen")
 
 export default class TenderDto {
 
@@ -11,7 +11,7 @@ export default class TenderDto {
     public CurrencyId?:string;
     public  Time?: number;
     public TotalToLead?: number;
-    public RankInfo?: Ranks;
+    public RankInfo!: Ranks;
     public UserLastPropositionTotal?: number
 
 }

@@ -18,6 +18,8 @@ export default function TenderLists() {
 
   }, [])
 
+W
+
   return (
     <div>
       <React.Fragment>
@@ -27,10 +29,10 @@ export default function TenderLists() {
             return (
               <Box className={Styles.BoxMain} key={index} sx={{ p: 2, border: '1px solid grey' }}>
                 <Box className={Styles.BoxHead}>
-                  <Box><Button variant="contained">00:14:32</Button></Box>
-                  <Box><Button variant="contained">פעיל</Button></Box>
-                  <Box>מס׳: 6589547859</Box>
-                  <Box className={Styles.headText}>{item.Name}</Box>
+                  {item.RankInfo==="Active"?
+                      <><Box><Button variant="contained">00:14:32</Button></Box><Box><Button variant="contained">פעיל</Button></Box><Box>מס׳: 6589547859</Box><Box className={Styles.headText}>{item.Name}</Box></>
+                   :"" }
+                    
                 </Box>
                 <Box className={Styles.line}></Box>
                 <Box className={Styles.Proposal} >
