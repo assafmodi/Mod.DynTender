@@ -1,6 +1,6 @@
 
 export type Ranks= ("Active"|"Ended"|"Frozen")
-export type Status= ("Active"|"Ended"|"Frozen")
+export type Status= ("Active"|"Ended"|"Frozen"|"NotStarted")
 export default class TenderDto {
 
     public Id!: number;
