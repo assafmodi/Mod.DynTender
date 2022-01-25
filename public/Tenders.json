@@ -9,6 +9,8 @@
     "TotalToLead": 77500,
     "RankInfo": "Active",
     "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"6589547859"
   },
   {
     "Id": 15,
@@ -21,6 +23,8 @@
     "TotalToLead": 77500,
     "RankInfo": null,
     "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"6589547459"
   },{
     "Id": 15,
     "EndDate": null,
@@ -30,8 +34,10 @@
     "CurrencyId": "₪",
     "Time": 22946,
     "TotalToLead": 77500,
-    "RankInfo": null,
+    "RankInfo": "Ended",
     "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"6580047859"
   },{
     "Id": 15,
     "EndDate": null,
@@ -43,6 +49,21 @@
     "TotalToLead": 77500,
     "RankInfo":  "Active",
     "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"6589347859"
+  },{
+    "Id": 15,
+    "EndDate": null,
+    "StartDate": "05:00",
+    "Name": "קוד 1 - מכרז רגיל",
+    "IsQualityTender": false,
+    "CurrencyId": "₪",
+    "Time": 22946,
+    "TotalToLead": 77500,
+    "RankInfo": "Frozen",
+    "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"6589545859"
   },{
     "Id": 15,
     "EndDate": null,
@@ -54,6 +75,8 @@
     "TotalToLead": 77500,
     "RankInfo": null,
     "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"6589543259"
   },{
     "Id": 15,
     "EndDate": null,
@@ -65,6 +88,8 @@
     "TotalToLead": 77500,
     "RankInfo": null,
     "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"6589553859"
   },{
     "Id": 15,
     "EndDate": null,
@@ -76,6 +101,8 @@
     "TotalToLead": 77500,
     "RankInfo": null,
     "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"6569547859"
   },{
     "Id": 15,
     "EndDate": null,
@@ -87,6 +114,8 @@
     "TotalToLead": 77500,
     "RankInfo": null,
     "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"6527547859"
   },{
     "Id": 15,
     "EndDate": null,
@@ -98,6 +127,8 @@
     "TotalToLead": 77500,
     "RankInfo": null,
     "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"6589307859"
   },{
     "Id": 15,
     "EndDate": null,
@@ -109,6 +140,8 @@
     "TotalToLead": 77500,
     "RankInfo": null,
     "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"6583147859"
   },{
     "Id": 15,
     "EndDate": null,
@@ -120,6 +153,8 @@
     "TotalToLead": 77500,
     "RankInfo": null,
     "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"658347859"
   },{
     "Id": 15,
     "EndDate": null,
@@ -131,6 +166,8 @@
     "TotalToLead": 77500,
     "RankInfo": null,
     "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"6583547859"
   },{
     "Id": 15,
     "EndDate": null,
@@ -142,6 +179,8 @@
     "TotalToLead": 77500,
     "RankInfo": null,
     "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"6583647859"
   },{
     "Id": 15,
     "EndDate": null,
@@ -153,15 +192,6 @@
     "TotalToLead": 77500,
     "RankInfo": null,
     "UserLastPropositionTotal": 80000
-  },{
-    "Id": 15,
-    "EndDate": null,
-    "StartDate": "05:00",
-    "Name": "קוד 1 - מכרז רגיל",
-    "IsQualityTender": false,
-    "CurrencyId": "₪",
-    "Time": 22946,
-    "TotalToLead": 77500,
-    "RankInfo": null,
-    "UserLastPropositionTotal": 80000
+    ,"Statuses":"Active"
+    ,"TenderNumber":"6537847859"
   }]

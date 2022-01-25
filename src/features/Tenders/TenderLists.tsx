@@ -7,18 +7,16 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Styles from './Tenders.module.scss'
+
 export default function TenderLists() {
-
-
   const dispatch = useDispatch();
   const getAllTenders = useSelector(selectTenders);
 
   useEffect(() => {
     dispatch(getAllTendersAsync("5"));
 
-  }, [])
+  }, []);
 
-W
 
   return (
     <div>
@@ -29,10 +27,33 @@ W
             return (
               <Box className={Styles.BoxMain} key={index} sx={{ p: 2, border: '1px solid grey' }}>
                 <Box className={Styles.BoxHead}>
-                  {item.RankInfo==="Active"?
-                      <><Box><Button variant="contained">00:14:32</Button></Box><Box><Button variant="contained">פעיל</Button></Box><Box>מס׳: 6589547859</Box><Box className={Styles.headText}>{item.Name}</Box></>
-                   :"" }
-                    
+                  {(() => {
+
+                    switch (item.Statuses) {
+                      case 'Active':
+                        return (
+                          <><Box><Button variant="contained">00:14:32</Button></Box><Box><Button variant="contained">פעיל</Button></Box><Box>מס׳: {item.TenderNumber}</Box><Box className={Styles.headText}>{item.Name}</Box></>
+                        )
+                      case 'Ended':
+                        return (
+                          <>
+                            <Box></Box><Box><Button color="error" style={{
+                              backgroundColor: "#000000", width:"100px"
+                            }}
+                              variant="contained">המכרז הסתיים</Button></Box><Box>מס׳: 6589547859</Box><Box className={Styles.headText}>{item.Name}</Box></>
+                        )
+                      case 'Frozen':
+                        return (
+                          <><Box><Button variant="contained">00:14:32</Button></Box><Box><Button variant="contained">המכרז בהקפאה</Button></Box><Box>מס׳: 6589547859</Box><Box className={Styles.headText}>{item.Name}</Box></>
+                        )
+                      default:
+                        return (
+                          " "
+                        )
+                    }
+
+                  })()}
+
                 </Box>
                 <Box className={Styles.line}></Box>
                 <Box className={Styles.Proposal} >
