@@ -10,8 +10,8 @@ export default class TenderDto {
     public TenderNumber!: string;
     public IsQualityTender?: boolean;
     public CurrencyId?:string;
-    public Time?: number;
-    public TotalToLead?: number;
+    public Time?: number ;
+    public TotalToLead?: number | undefined;
     public RankInfo!: Ranks;// האם מכרז מוביל או לא
     public UserLastPropositionTotal?: number
     public Statuses!: Status;
