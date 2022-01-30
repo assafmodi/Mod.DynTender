@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import tenderSlice from "../features/Tenders/TendersSlice";
+import tendersSlice from "../features/Tenders/TendersSlice";
+import tenderSlice from "../features/Tender/TenderSlice";
 
 export default configureStore({
   reducer: {
-    data: tenderSlice
+    data: tendersSlice,
+    tenderdata:tenderSlice
   },
 });

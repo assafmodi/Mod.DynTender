@@ -16,6 +16,10 @@ export default function TenderLists({ item, index }: IProps) {
         return  num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
      }
 
+     function redirctLink(index: number): React.MouseEventHandler<HTMLDivElement> | undefined {
+        throw new Error("Function not implemented.");
+    }
+
     return (
         <>
             <Box className={Styles.BoxMain} key={index} sx={{ p: 2, border: '1px solid grey' }}>
@@ -25,7 +29,7 @@ export default function TenderLists({ item, index }: IProps) {
                         switch (item.Statuses) {
                             case 'Active':
                                 return (
-                                    <><Box className={Styles.BoxHead+  ` Active`}><Box><Button variant="contained">00:14:32</Button></Box><Box><Button variant="contained">פעיל</Button></Box><Box>מס׳: {item.TenderNumber}</Box><Box className={Styles.headText}>{item.Name}</Box></Box></>
+                                    <><Box  onClick={redirctLink(index)} className={Styles.BoxHead+  ` Active`}><Box><Button variant="contained">00:14:32</Button></Box><Box><Button variant="contained">פעיל</Button></Box><Box>מס׳: {item.TenderNumber}</Box><Box className={Styles.headText}>{item.Name}</Box></Box></>
                                 )
                             case 'NotStarted':
                                 return (
@@ -43,7 +47,9 @@ export default function TenderLists({ item, index }: IProps) {
                                 )
                             case 'Frozen':
                                 return (
-                                    <><Box className={Styles.BoxHead}><Box><Button variant="contained">00:14:32</Button></Box><Box><Button variant="contained">המכרז בהקפאה</Button></Box><Box>מס׳: {item.TenderNumber}</Box><Box className={Styles.headText}>{item.Name}</Box></Box></>
+                                    <><Box className={`${Styles.BoxHead} ${Styles.Frozen}`}><Box></Box><Box><Button variant="contained" style={{
+                                        backgroundColor: "#E3E6F0", width: "140px",color: "#44454B"
+                                    }}>המכרז בהקפאה</Button></Box><Box>מס׳: {item.TenderNumber}</Box><Box className={Styles.headText}>{item.Name}</Box></Box></>
                                 )
                             default:
                                 return (
@@ -78,3 +84,5 @@ export default function TenderLists({ item, index }: IProps) {
         </>
     )
 }
+
+

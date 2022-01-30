@@ -9,7 +9,7 @@ const TenderHeading = styled.h4``;
 
 
 
-const Tenders = ({ id }) => {
+const Tenders = () => {
 
   return (
     <div>
