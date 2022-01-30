@@ -31,7 +31,7 @@ export default function TenderLists({ item, index }: IProps) {
                                 return (
                                     <><Box  className={Styles.BoxHead+  ` Active`}><Box><Button variant="contained">00:14:32</Button></Box><Box><Button variant="contained">פעיל</Button></Box><Box>מס׳: {item.TenderNumber}</Box><Box className={Styles.headText}>{item.Name}</Box></Box></>
                                 )
-                            case 'NotStarted':
+                            case 'NotStarted': 
                                 return (
                                     <><Box className={`${Styles.BoxHead} ${Styles.NotStarted}`}><Box></Box><Box><Button style={{
                                         backgroundColor: "#FCC100", width: "116px", color: "#000000"
