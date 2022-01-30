@@ -29,7 +29,7 @@ export default function TenderLists({ item, index }: IProps) {
                         switch (item.Statuses) {
                             case 'Active':
                                 return (
-                                    <><Box  onClick={redirctLink(index)} className={Styles.BoxHead+  ` Active`}><Box><Button variant="contained">00:14:32</Button></Box><Box><Button variant="contained">פעיל</Button></Box><Box>מס׳: {item.TenderNumber}</Box><Box className={Styles.headText}>{item.Name}</Box></Box></>
+                                    <><Box  className={Styles.BoxHead+  ` Active`}><Box><Button variant="contained">00:14:32</Button></Box><Box><Button variant="contained">פעיל</Button></Box><Box>מס׳: {item.TenderNumber}</Box><Box className={Styles.headText}>{item.Name}</Box></Box></>
                                 )
                             case 'NotStarted':
                                 return (
